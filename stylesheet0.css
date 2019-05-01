@@ -14,6 +14,8 @@
 #title-name{
     font-size: 72px;
     margin-top: 10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #search-bar{
@@ -58,6 +60,9 @@
     font-size: 18px;
     border-radius: 25px;
     padding: 5px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 #buttons{
