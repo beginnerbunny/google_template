@@ -1,56 +1,38 @@
+html * {
+    font-family: sans-serif;
+}
+
 .top{
     text-align: right;
-    font-size: 12px;
     margin-right: 12px;
-    font-family: sans-serif;
     padding: 6px;
 }
 
+.top a{
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+    margin: 6px;
+    font-size: 12px;
+}
+
 .middle{
+    margin-top: 10%;
     text-align: center;
 }
 
-#title-name{
-    font-size: 72px;
-    margin-top: 10%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+img{
+    height: 150px;
+    width: 312px;
 }
 
-#search-bar{
-    margin-top: 1em;
-}
-
-#l1{
-    color: blue;
-}
-
-#l2{
-    color: red;
-}
-
-#l3{
-    color: yellow;
-}
-
-#l4{
-    color: blue;
-}
-
-#l5{
-    color: green;
-}
-
-#l6{
-    color: red;
-}
-
-#search-bar{
+/* #search-bar{
     margin: 12px;
-}
+} */
 
 #search-bar input[type=text]{
-    border: 1px solid gray;
+    background-color: transparent;
+    border: 1px solid #c3c3c3;
     width: 40%;
     position: relative;
     left: 30%;
@@ -58,10 +40,12 @@
     display: flex;
     font-size: 18px;
     border-radius: 25px;
-    padding: 5px;
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    padding: 12px;
+    outline: none;
+}
+
+#search-bar input[type=text]:hover, #search-bar input[type=text]:active{
+    box-shadow: 3px 3px 3px 3px #c3c3c3;
 }
 
 #buttons{
@@ -71,22 +55,41 @@
 .b{
     margin-right: 12px;
     padding: 6px;
-    font-family: sans-serif;
+    background-color: #f1f1f1;
+    padding: 12px;
+    border: none;
+    color: gray;
+}
+
+.b:hover{
+    color: black;
+    border: 1px solid #c3c3c3;
 }
 
 #left-side{
-    padding: 12px;
-    padding-left: 6px;
-    text-align: left;
+    padding-bottom: 12px;
     bottom: 0;
     left: 0;
     position: absolute;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 12px;
+}
+
+li{
+    display: inline;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: gray;
+    padding: 6px;
+}
+
 #right-side{
     padding: 12px;
-    text-align: right;
-    padding-right: 6px;
     bottom: 0;
     right: 0;
     position: absolute;
