@@ -38,21 +38,24 @@ img{
     border: 1px solid #c3c3c3;
     width: 40%;
     position: relative;
-    left: 30%;
+    /* left: 30%;
     right: 30%;
-    display: flex;
+    display: flex; */
     font-size: 18px;
     border-radius: 25px;
     padding: 12px;
     outline: none;
 }
+/* Doesnt' need to be flex - can just remove left / right / flex properties and it should stay centered */
 
 #search-bar input[type=text]:hover{
-    box-shadow: 3px 3px 3px 3px #c3c3c3;
+    box-shadow: 3px #c3c3c3;
+    /* can just say 3px */
 }
 
 #search-bar input[type=text]:focus{
-    box-shadow: 3px 3px 3px 3px #c3c3c3;
+    box-shadow: 3px #c3c3c3;
+    /* can just say 3px */
 }
 
 #buttons{
@@ -84,6 +87,11 @@ img{
     left: 0;
 }
 
+/* Uneven padding on this bottom bar */
+.bottom #left-side ul    { 
+    padding: 0;
+}
+
 ul {
     list-style-type: none;
     font-size: 12px;
@@ -95,7 +103,8 @@ li{
 
 .bottom a{
     text-decoration: none;
-    color: gray;
+    color: gray; 
+    /* match the gray they have - download extensions */
     padding: 6px;
 }
 
@@ -110,7 +119,13 @@ a:hover{
         transform: translateY(100%);
     }
 
-    * {
+    button {
         font-size: 24px;
     }
+
+    a { 
+        font-size: 20px;
+    }
+
+    /* change for specific */
 }
